@@ -73,7 +73,7 @@ class inputMaker:
 input = inputMaker()
 print(input.return_all(15,60,2,"work",15))
 
-def optimazation(foto_excess , ACCU_loaded, month, hour , day , power_cost_revenue):
+def optimisation(foto_excess , ACCU_loaded, month, hour , day , power_cost_revenue):
     if foto_excess==True and (power_cost_revenue(month,day,hour))[1] == 2.5:
         return("B")
     elif foto_excess==True and ACCU_loaded==False and power_cost_revenue(month,day,hour)[1] != 2.5:
@@ -83,7 +83,7 @@ def optimazation(foto_excess , ACCU_loaded, month, hour , day , power_cost_reven
     else:
         return("D")
 
-print(optimazation(True,True,10,15,"free",input.power_cost_revenue))
+print(optimisation(True,True,10,15,"free",input.power_cost_revenue))
 
 
 
