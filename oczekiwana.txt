@@ -1,0 +1,5 @@
+work	0 5	20		
+work	5 24	23		
+free 	0 8	20		
+free	8 24	23		
+vac	0 24	12
